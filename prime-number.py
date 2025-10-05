@@ -1,13 +1,12 @@
 username = 'admin'
 password = '1234'
 tries_left = 3
-import math
 
 while tries_left > 0:
-    a = input("Enter your username: ")
-    b = input("Enter your password: ")
+    entered_username = input("Enter your username: ")
+    entered_password = input("Enter your password: ")
 
-    if a==username and b==password:
+    if entered_username==username and entered_password==password:
         print ('you are logged in')
         break
     else:
@@ -26,8 +25,8 @@ else:
     
         for i in range(2, num):
             if num % i == 0:
-             is_prime = False
-             break
+                is_prime = False
+                break
     
         if is_prime:
             print(num, end=" ")
